@@ -1,0 +1,2 @@
+This is a placeholder file to ensure the Images directory is tracked by Git.
+This folder is intended to store PNG files that will be converted to SVGs using the png2svg_batch.sh script.

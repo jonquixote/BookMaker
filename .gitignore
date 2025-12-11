@@ -1,4 +1,7 @@
-# Ignore all files in specific directories
+# Ignore all files in specific directories, but allow .gitkeep files
 /Images/*
+!/Images/.gitkeep
 /CSVs/*
+!/CSVs/.gitkeep
 /SVGs/*
+!/SVGs/.gitkeep
