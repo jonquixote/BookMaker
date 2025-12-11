@@ -57,7 +57,12 @@ The script automatically generates two CSV files that can be used for InDesign's
 - Ideal for books with content on every page
 
 ### Steps to Use in InDesign:
-1. Open your InDesign template from the `InDesign Data Match Files` folder
+1. Open your InDesign template:
+   - Use one of the provided templates from the `InDesign Data Match Files` folder:
+     - `Square.indd` (8.5" x 8.5" format)
+     - `Portrait.indd` (8.5" x 11" format)
+     - `Landscape.indd` (11" x 8.5" format)
+   - Or create your own InDesign document with the desired page size
 2. Draw a Rectangle Frame (Box with an X) where you want your images to appear
 3. Go to `Window > Utilities > Data Merge`
 4. Click the menu icon > Select Data Source and pick one of your CSV files from the `CSVs` folder
