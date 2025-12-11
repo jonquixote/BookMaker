@@ -1,6 +1,6 @@
-# PNG to SVG Batch Conversion Script
+# BookMaker: PNG to SVG Conversion with InDesign Data Merge
 
-This script converts PNG images to high-quality SVGs for use with Adobe InDesign.
+This tool converts PNG images to high-quality SVGs and automatically generates CSV files for Adobe InDesign Data Merge workflows.
 
 ## How It Works
 
@@ -62,16 +62,18 @@ The script automatically generates two CSV files that can be used for InDesign's
      - `Square.indd` (8.5" x 8.5" format)
      - `Portrait.indd` (8.5" x 11" format)
      - `Landscape.indd` (11" x 8.5" format)
+     - Note: These templates already include a Rectangle Frame for data merge
    - Or create your own InDesign document with the desired page size
-2. Draw a Rectangle Frame (Box with an X) where you want your images to appear
-3. Go to `Window > Utilities > Data Merge`
-4. Click the menu icon > Select Data Source and pick one of your CSV files from the `CSVs` folder
-5. Drag the "@Images" item from the Data Merge panel into your Rectangle Frame
-6. Click the "Create Merged Document" icon (little square with arrow)
-7. In the dialog that appears, set "Records per Document Page" to "Single Record"
-8. Click OK and InDesign will generate your book layout with all images placed according to your template
+     - If creating your own, draw a Rectangle Frame (Box with an X) where you want images to appear
+2. Go to `Window > Utilities > Data Merge`
+3. Click the menu icon > Select Data Source and pick one of your CSV files from the `CSVs` folder
+4. Drag the "@Images" item from the Data Merge panel into your Rectangle Frame
+5. Click the "Create Merged Document" icon (little square with arrow)
+6. In the dialog that appears, set "Records per Document Page" to "Single Record"
+7. Click OK and InDesign will generate your book layout with all images placed according to your template
 
 ### Note:
 - The CSV files include absolute file paths to the SVGs in the SVGs folder
 - Make sure your InDesign document and asset locations are set up properly
+- The included InDesign files already have a Rectangle Frame set up for data merge
 - The files are timestamped to avoid overwriting previous versions
