@@ -27,8 +27,16 @@ The script will automatically install the required tools if they're not present:
 
 ## Output
 
+The script produces multiple outputs:
+
+### SVG Files
 All SVG files are placed in the `SVGs` folder with sequential numbering:
 - `0.svg`, `1.svg`, `2.svg`, ..., `n.svg`
+
+### CSV Files for InDesign Data Merge
+Two CSV files are automatically generated in the `CSVs` folder with timestamps:
+- `image_list_with_blank_pages_interleaved_*.csv` - With blank pages interleaved between each image
+- `image_list_without_blank_pages_*.csv` - Without blank pages, sequential images only
 
 ## Quality Improvements
 
