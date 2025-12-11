@@ -58,12 +58,13 @@ The script automatically generates two CSV files that can be used for InDesign's
 
 ### Steps to Use in InDesign:
 1. Open your InDesign template from the `InDesign Data Match Files` folder
-2. Go to `Window > Utilities > Data Merge`
-3. Click "Select Data Source" in the Data Merge panel
-4. Select one of the generated CSV files from the `CSVs` folder
-5. Drag the "Images" field from the Data Merge panel to your image placeholder
-6. Click "Create Merged Documents" to generate your book layout
-7. InDesign will create a document with all images placed according to your template
+2. Draw a Rectangle Frame (Box with an X) where you want your images to appear
+3. Go to `Window > Utilities > Data Merge`
+4. Click the menu icon > Select Data Source and pick one of your CSV files from the `CSVs` folder
+5. Drag the "@Images" item from the Data Merge panel into your Rectangle Frame
+6. Click the "Create Merged Document" icon (little square with arrow)
+7. In the dialog that appears, set "Records per Document Page" to "Single Record"
+8. Click OK and InDesign will generate your book layout with all images placed according to your template
 
 ### Note:
 - The CSV files include absolute file paths to the SVGs in the SVGs folder
