@@ -1,0 +1,34 @@
+# BookMaker Project Configuration
+
+This file contains project-specific configurations and notes for the BookMaker tool.
+
+## Project Purpose
+- Converts PNG images to high-quality SVGs for book publishing
+- Automatically generates CSV files for Adobe InDesign Data Merge
+- Maintains sequential numbering for proper book layout
+
+## Key Components
+- `png2svg_batch.sh` - Main script for PNG to SVG conversion with integrated CSV generation
+- `assets/` - Contains `blank.svg` for optional blank pages in InDesign layouts
+- `Images/` - Input directory for PNG files (0_front_cover.png, page_*.png, etc.)
+- `SVGs/` - Output directory for converted SVG files
+- `CSVs/` - Output directory for InDesign data merge CSV files
+- `InDesign Data Match Files/` - Contains template files for different book formats
+
+## Usage
+Run the main script from the project root:
+```bash
+./png2svg_batch.sh
+```
+
+## InDesign Integration
+The script generates two types of CSV files:
+1. With blank pages interleaved for layouts requiring space between content
+2. Without blank pages for continuous layouts
+
+Use these CSV files with InDesign's Data Merge feature along with the provided templates.
+
+## Note
+- The .gitignore file is configured to ignore generated content but keep directory structures
+- All conversion parameters are optimized for quality preservation
+- The script handles both simple and complex image conversion scenarios
